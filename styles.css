@@ -1,16 +1,36 @@
+* {
+    margin: 0;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 4fr;
     height: 100vh;
     margin: 0;
 }
 
+.sidebar > ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.sidebar > ul > li {
+    padding-bottom: 20px;
+}
 
 .sidebar {
     background-color: lightblue;
     grid-row: 1 / 3;
 
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+#dashboard-logo {
 }
 
 .header {
