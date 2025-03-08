@@ -24,7 +24,7 @@ body {
 }
 
 .header ul li {
-    padding: 10px;
+    padding: 15px;
 }
 
 .sidebar {
@@ -36,6 +36,11 @@ body {
     gap: 60px;
     font-size: 1.1em;
     padding: 20px;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
 }
 
 #dashboard-logo {
@@ -52,7 +57,7 @@ body {
 .header {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    padding: 30px;
+    padding: 10px 50px 10px 50px;
 
 }
 
@@ -62,6 +67,29 @@ body {
     justify-content: space-between;
     padding-left: 35px;
 
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+}
+
+.greetings {
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+
+.greetings p {
+    font-size: 2em;
+}
+
+.top .profile {
+    width: 3em;
+}
+.bottom .profile {
+    width: 4em;
 }
 
 .search-bar {
@@ -90,4 +118,15 @@ body {
 #search-icon {
     position: relative;
     right: 35px;    
+}
+
+button {
+    background-color: lightskyblue;
+    border-radius: 10px;
+    border-style: none;
+    padding: 5px 15px 5px 15px;
+    font-size: 1.2em;
+
+    display: flex;
+    
 }
