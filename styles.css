@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -64,7 +65,7 @@ body {
 .top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     padding-left: 35px;
 
 }
@@ -129,4 +130,80 @@ button {
 
     display: flex;
     
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 30px;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+}
+.content .section:first-child {
+    grid-column: span 2;
+}
+
+.content .section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section-header {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.content .project-list {
+
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    justify-items: start;
+    align-items: start;
+    padding: 10px;
+    flex: 1;
+    gap: 20px;
+
+    padding-top: 0;
+
+}
+
+.project {
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+
+    padding: 10px;
+
+}
+
+.project-header {
+    font-size: 1em;
+}
+
+.project-description {
+    font-size: 0.8em;
+}
+
+.annoucement-list {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.annoucement-item {
+    padding: 10px;
+}
+
+.annoucement-header {
+    font-size: 0.8em;
+}
+
+.content .section>.section {
+    padding: 10px;
+    padding-top: 0px;
 }
