@@ -65,7 +65,7 @@ body {
 .top {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     padding-left: 35px;
 
 }
@@ -135,7 +135,6 @@ button {
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 30px;
 }
 .section {
     display: flex;
@@ -184,18 +183,13 @@ button {
 .project-header {
     font-size: 1em;
 }
-
-.project-description {
-    font-size: 0.8em;
-}
-
-.annoucement-list {
+.annoucement-list, .trending-list {
     background-color: white;
     border-radius: 5px;
     padding: 10px;
 }
 
-.annoucement-item {
+.annoucement-item, .trending-item {
     padding: 10px;
 }
 
@@ -206,4 +200,19 @@ button {
 .content .section>.section {
     padding: 10px;
     padding-top: 0px;
+}
+
+.content .section .section:first-child {
+    margin-bottom: auto;
+}
+
+.project-description, .annoucement-description, .trending-description {
+    color:rgb(67, 66, 66);
+    font-size: 0.8em;
+
+}
+
+
+.trending-item-header {
+    font-size: 0.8em;
 }
